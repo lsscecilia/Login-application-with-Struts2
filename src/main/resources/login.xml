@@ -4,6 +4,7 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
+    <!-- ========== Results determine what gets returned to the browser after an action is executed.  ============ -->
     <package name="Login" extends="struts-default">
 
         <action name="LoginInput">

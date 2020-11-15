@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Paper Stack</title>
+<title>Login</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>

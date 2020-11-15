@@ -6,12 +6,13 @@
 3. mysql 
 4. mysql jdbc driver
 
-##Set up
+## Windows set up
+### Set up
 2. add JAVA_HOME into sys environment (Eg. `C:\Progra~1\Java\jdk-12.0.1`)
 3. add MAVEN_HOME into sys environment (Eg. `C:\Progra~1\apache-maven-3.6.3`)
 4. add path: `%MAVEN_HOME%\bin;` to environment 
 
-## Load script into database (mySQL) - assuming my sql is already set up: 
+### Load script into database (mySQL) - assuming my sql is already set up: 
 1. start server <br>
 `cd ..\mysql\bin` <br>
 `mysqld --console`
