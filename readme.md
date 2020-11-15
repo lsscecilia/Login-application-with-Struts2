@@ -1,6 +1,6 @@
 # CZ3002 assignment 2: Login application with struts 2 and MySQL database
 
-##Requirements 
+## Requirements 
 1. Java jdk 
 2. maven
 3. mysql 
