@@ -16,12 +16,12 @@
 1.	Download MySQL Community Server "ZIP ARCHIVE" from https://dev.mysql.com/downloads/mysql/:
     - Under "Other Downloads", download "Windows (x86, 64-bit), ZIP ARCHIVE (mysql-8.0.{xx}-winx64.zip)". <br>
 
-2.	UNZIP the downloaded file into your project directory "C:\MySQL". MySQL will be unzipped as "c:\MySQL\mysql-8.0.{xx}-winx64". <br>
-    - For EASE OF USE, we shall shorten and rename the directory to "c:\MySQl\mysql". Take note and remember your MySQL installed directory!!! <br>
+2.	UNZIP the downloaded file into your project directory `"C:\MySQL"`. MySQL will be unzipped as `"c:\MySQL\mysql-8.0.{xx}-winx64"`. <br>
+    - For EASE OF USE, we shall shorten and rename the directory to `"c:\MySQl\mysql"`. Take note and remember your MySQL installed directory!!! <br>
 
 3.	(NEW since MySQL 5.7.7) Initialize the database: Start a CMD (as administrator) ("Search" button ⇒ Enter "cmd" ⇒ Right-Click on "Command Prompt" ⇒ Run as Administrator) and issue these commands: <br>
 	- Change directory to the MySQL's binary directory<br>
-	- Eg. Suppose that your MySQL is installed in "c:\myWebProject\mysql" `cd \myWebProject\mysql\bin` <br>
+	- Eg. Suppose that your MySQL is installed in "c:\MySQL\mysql" `cd \MySQL\mysql\bin` <br>
 	 
 4.  Initialize the database. Create a root user with random password & show the messages on console.
     `mysqld --initialize --console` <br>
@@ -32,13 +32,13 @@
 
 6. Startup server
     - Change the current directory to MySQL's binary directory <br>
-    - Eg. Assume that the MySQL installed directory is "c:\MySQL\mysql" `cd \myWebProject\mysql\bin` <br>
+    - Eg. Assume that the MySQL installed directory is "c:\MySQL\mysql" `cd \MySQL\mysql\bin` <br>
      
     - Start the MySQL Database Server `mysqld --console` <br>  
     
 7. Start client 
     - Change the current directory to MySQL's binary directory <br>
-    - Eg. Assume that the MySQL installed directory is "c:\MySQL\mysql" `cd \myWebProject\mysql\bin` <br>
+    - Eg. Assume that the MySQL installed directory is "c:\MySQL\mysql" `cd \MySQL\mysql\bin` <br>
        
     - Start a client as superuser "root" (-u), and prompt for password `mysql -u root -p` <br>
     
