@@ -2,13 +2,15 @@ package controller;
 
 import com.opensymphony.xwork2.ActionSupport;
 import model.Authentication;
+import model.AuthenticationInterface;
 
 /**
  * action class
  */
 public class LoginAction extends ActionSupport {
+
     /**
-     *
+     * the serialVersionUID is a unique identifier for Serializable classes.
      */
     private static final long serialVersionUID = 1L;
     private String userName;
@@ -30,9 +32,13 @@ public class LoginAction extends ActionSupport {
         this.password = password;
     }
 
+    /**
+     * login action
+     */
     @Override
     public String execute() throws Exception {
-        return Authentication.isLoginValid(userName, password) ? SUCCESS : INPUT;
+        AuthenticationInterface authentication = new Authentication();
+        return authentication.isLoginValid(userName, password) ? SUCCESS : INPUT;
     }
 
 }

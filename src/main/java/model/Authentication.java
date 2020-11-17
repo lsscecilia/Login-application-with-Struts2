@@ -13,15 +13,26 @@ import static com.opensymphony.xwork2.Action.SUCCESS;
  * model class
  * logic for data access object and authentication
  */
-public class Authentication {
+public class Authentication implements AuthenticationInterface {
 
-    private static Connection conn() throws Exception {
+    /**
+     * method to connect with local MySQL database
+     * @return connection
+     * @throws Exception no connection
+     */
+    private Connection conn() throws Exception {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        // The format is: "jdbc:mysql://hostname:port/databaseName", "username", "password"
+        // The format is: "jdbc:mysql://hostname:port/databaseName", "username", "password".
         return DriverManager.getConnection("jdbc:mysql://localhost:3306/UserPasswordTable?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC", "cecilia", "xxxx");
     }
 
-    public static boolean isLoginValid(String userName, String password) {
+    /**
+     * method to query database and check if login is valid (correct username and password)
+     * @param userName username
+     * @param password password
+     * @return true if login is valid
+     */
+    public boolean isLoginValid(String userName, String password) {
         String name="";
         String ret = ERROR;
 
