@@ -23,11 +23,11 @@
 	- Change directory to the MySQL's binary directory<br>
 	- Eg. Suppose that your MySQL is installed in "c:\myWebProject\mysql" `cd \myWebProject\mysql\bin` <br>
 	 
-4.  Initialize the database. Create a root user with random password. Show the messages on console
+4.  Initialize the database. Create a root user with random password & show the messages on console.
     `mysqld --initialize --console` <br>
     - A temporary password is generated for root@localhost: xxxxxxxx <br>
     - During the installation, a superuser called root is created with a temporary password, as shown above. TAKE NOTE of the PASSWORD, COPY and SAVE it somewhere, and also TAKE A PICTURE!!! <br>
-    - NOTE: If error "VCRUNTIME140_1.dll was not found" occurs, check HERE. <br>
+   
 5.	If you make a mistake or forgot your password, DELETE the entire MySQL directory "C:\MySQL\mysql", and REPEAT step 2 and 3. <br>
 
 6. Startup server
