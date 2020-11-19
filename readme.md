@@ -1,5 +1,21 @@
 # CZ3002 assignment 2: Login application with struts 2 and MySQL database
 
+## Files 
+1. SQL script: `db.sql`
+2. WAR file: `target -> login.war`
+
+## How to run? <br>
+Before running, please make sure that the SQL server is running in the background. 
+1. start server <br>
+`cd ..\mysql\bin` <br>
+`mysqld --console`
+
+2. run the code
+`cd ..\login` 
+`mvn jetty:run` into terminal
+
+Website: `http://localhost:8080/login/view/login.jsp`
+
 ## Requirements 
 1. Java jdk 
 2. maven
@@ -64,10 +80,5 @@ myuser is username. password will be requested.
 3. run script <br>
 `source ..\login\db.sql;`
 
-
-## How to run? <br>
-`mvn jetty:run` into terminal 
-
-Website: `http://localhost:8080/login/view/login.jsp`
 
 
