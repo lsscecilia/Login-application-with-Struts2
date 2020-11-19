@@ -21,8 +21,8 @@
 
 
         <action name="LoginAction" class="controller.LoginAction">
-            <result name="input" type="chain">LoginInput</result>
-            <result name="success" type="chain">LoginSuccess</result>
+            <result name="input">/view/login.jsp</result>
+            <result name="success">/view/login_success.jsp</result>
         </action>
 
     </package>
