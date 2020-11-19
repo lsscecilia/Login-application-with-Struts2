@@ -11,7 +11,7 @@ Before running, please make sure that the SQL server is running in the backgroun
 `mysqld --console`
 
 2. run the code
-`cd ..\login` 
+`cd ..\login`  <br>
 `mvn jetty:run` into terminal
 
 Website: `http://localhost:8080/login/view/login.jsp`
